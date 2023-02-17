@@ -14,20 +14,20 @@ const calcularTabuada = function (minimoMultiplicador, maximoMultiplicador, mini
     let resultado;
 
     if  ( isNaN ( valorMinMulti )  ||  isNaN ( valorMaxMulti )  ||  isNaN ( maximoMultiplicador )  ||  isNaN ( miniMultiFixo ) )  {
-        estado  =  falso ;
+        status  =  false;
     }  else  if  ( valorMinMulti  >  valorMaxMulti  ||  miniMultiFixo  >  maxiMulti )  {
-        estado  =  falso ;
+        status  =  false ;
     }  else  if ( valorMinMulti  <  2  ||  valorMinMulti  >  100  ||  valorMaxMulti  <  2  ||  valorMaxMulti  >  100 ) {
-        estado  =  falso ;
+        status  =  false ;
     }  else  if ( miniMultiFixo  <  1  ||  miniMultiFixo  >  50  ||  maxiMulti  <  1  ||  maxiMulti  >  50 ) {
-        estado  =  falso ;
+        status  =  false ;
     } else {
-        while (!(valorMin > valorMax)) {
-            console.log('\n\nTabuada do ' + valorMin);
-            let minMulti = Number(minMultiplicador);
-            while (!(minMulti > maxMulti)) {
-                resultado = valorMin * minMulti;
-                console.log(valorMin + ' X ' + minMulti + ' = ' + resultado);
+        while (!(valorMinMulti > valorMaxMulti)) {
+            console.log('\n\nTabuada do ' + valorMinMulti);
+            let minMulti = Number(minimoMultiplicador);
+            while (!(minMulti > maxiMulti)) {
+                resultado = valorMinMulti * minMulti;
+                console.log(valorMinMulti + ' X ' + minMulti + ' = ' + resultado);
                 minMulti++;
             }
             valorMin++;

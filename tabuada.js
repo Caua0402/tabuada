@@ -6,7 +6,7 @@
  **********************************/
 
 var readline = require('readline');
-var tabuada = require('./modulo/calcularTabuadas.js');
+var tabuada = require('./modulo/calcularTabuada.js');
 
 var entradaDados = readline.createInterface({
 
